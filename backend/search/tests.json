@@ -1,0 +1,26 @@
+{
+  "tests": [
+    {
+      "name": "OPTIONS preflight",
+      "method": "OPTIONS",
+      "path": "/",
+      "expectedStatus": 200
+    },
+    {
+      "name": "Search query",
+      "method": "POST",
+      "path": "/",
+      "body": { "query": "Какие услуги вы предоставляете?" },
+      "expectedStatus": 200,
+      "expectedBody": { "answer": "string" },
+      "bodyMatcher": "partial"
+    },
+    {
+      "name": "Empty query error",
+      "method": "POST",
+      "path": "/",
+      "body": { "query": "" },
+      "expectedStatus": 400
+    }
+  ]
+}
