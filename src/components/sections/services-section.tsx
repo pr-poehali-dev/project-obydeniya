@@ -17,29 +17,29 @@ export function ServicesSection() {
           <h2 className="mb-2 font-sans text-5xl font-light tracking-tight text-foreground md:text-6xl lg:text-7xl">
             Услуги
           </h2>
-          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Наши компетенции</p>
+          <p className="font-mono text-sm text-foreground/60 md:text-base">/ Спорт × Технологии × AI</p>
         </div>
 
         <div className="grid gap-8 md:grid-cols-2 md:gap-x-16 md:gap-y-12 lg:gap-x-24">
           {[
             {
-              title: "Веб-разработка",
-              description: "Создание современных веб-приложений любой сложности",
+              title: "AI-аналитика спортсменов",
+              description: "Анализ данных атлетов с помощью искусственного интеллекта для повышения результатов",
               direction: "top",
             },
             {
-              title: "UI/UX Дизайн",
-              description: "Проектирование удобных и красивых интерфейсов",
+              title: "Умные тренировки",
+              description: "AI-платформа для персонализированных тренировочных программ на основе биометрии",
               direction: "right",
             },
             {
-              title: "Мобильные приложения",
-              description: "Кроссплатформенная разработка для iOS и Android",
+              title: "Спортивные данные",
+              description: "Сбор, обработка и визуализация спортивной статистики в реальном времени",
               direction: "left",
             },
             {
-              title: "Консалтинг",
-              description: "Техническая экспертиза и стратегическое планирование",
+              title: "AI-скаутинг",
+              description: "Интеллектуальный поиск и оценка талантов с помощью машинного обучения",
               direction: "bottom",
             },
           ].map((service, i) => (
